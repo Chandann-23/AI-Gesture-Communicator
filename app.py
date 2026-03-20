@@ -15,8 +15,6 @@ st.write("Current Tech Stack: Python | MediaPipe | Streamlit WebRTC")
 # --- INITIALIZE MEDIAPIPE ---
 
 hands = mp_hands.Hands(model_complexity=0, min_detection_confidence=0.8, min_tracking_confidence=0.8)
-mp_draw = mp.solutions.drawing_utils
-
 # --- GESTURE LOGIC ---
 def recognize_gesture(landmarks):
     fingertip_ids = [4, 8, 12, 16, 20]
